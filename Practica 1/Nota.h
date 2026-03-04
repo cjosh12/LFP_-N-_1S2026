@@ -22,46 +22,31 @@ public:
         this->ciclo = ciclo;
         this->anio = anio;
     }   
-    int getCarnet()
+    int getCarnet() const
     {
         return carnet;
     }   
-    int setCarnet(int carnet)
-    {
-        this->carnet = carnet;
-    }
-    int getCodigoCurso()
+    
+    int getCodigoCurso() const
     {
         return codigo_curso;
     }
-    int setCodigoCurso(int codigo_curso)
-    {
-        this->codigo_curso = codigo_curso;
-    }
-    float getNota()
+   
+    float getNota() const
     {
         return nota;
     }
-    float setNota(float nota)
-    {
-        this->nota = nota;
-    }
-    std::string getCiclo()
+    
+    std::string getCiclo() const
     {
         return ciclo;
     }
-    std::string setCiclo(std::string ciclo)
-    {
-        this->ciclo = ciclo;
-    }
-    int getAnio()
+    
+    int getAnio() const
     {
         return anio;
     }
-    int setAnio(int anio)
-    {
-        this->anio = anio;
-    }
+    
 };
 
 #endif

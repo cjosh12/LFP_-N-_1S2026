@@ -24,46 +24,31 @@ public:
         this->carrera = carrera;
         this->semestre = semestre;
     }
-    int getCarnet()
+    int getCarnet() const
     {
         return carnet;
     }
-    int setCarnet(int carnet)
-    {
-        this->carnet = carnet;
-    }
-    std::string getNombre()
+    
+    std::string getNombre() const
     {
         return nombre;
     }
-    std::string setNombre(std::string nombre)
-    {
-        this->nombre = nombre;
-    }
-    std::string getApellido()
+    
+    std::string getApellido() const
     {
         return apellido;
     }
-    std::string setApellido(std::string apellido)
-    {
-        this->apellido = apellido;
-    }
-    std::string getCarrera()
+    
+    std::string getCarrera() const
     {
         return carrera;
     }
-    std::string setCarrera(std::string carrera)
-    {
-        this->carrera = carrera;
-    }
-    int getSemestre()
+    
+    int getSemestre() const
     {
         return semestre;
     }
-    int setSemestre(int semestre)
-    {
-        this->semestre = semestre;
-    }
+   
 
 };
 #endif
