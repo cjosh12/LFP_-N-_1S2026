@@ -350,8 +350,7 @@ void reporteAnalisisCarrera(vector<Estudiante> estudiantes, vector<Nota> notas, 
 
                 reporte << "<h2>" << e.getNombre() << " " << e.getApellido() << " (Carnet: " << e.getCarnet() << ")</h2>";
                 reporte << "<p>Semestre: " << e.getSemestre() << "</p>";
-
-                vector<string> carreras;
+                
                 for (int i = 0; i < estudiantes.size(); i++)
                 {
                     string carrera = estudiantes[i].getCarrera();
@@ -443,10 +442,11 @@ void reporteAnalisisCarrera(vector<Estudiante> estudiantes, vector<Nota> notas, 
                 }
             }
         }
-        reporte << "</body></html>";
-        reporte.close();
     }
+    reporte << "</body></html>";
+    reporte.close();
 }
+
 int main()
 {
     vector<Curso> cursos;
