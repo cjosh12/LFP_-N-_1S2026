@@ -32,7 +32,7 @@ public:
         return nombre;
     }
    
-    int getCreditos()
+    int getCreditos() const
     {
         return creditos;
     }
